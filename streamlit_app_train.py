@@ -94,7 +94,7 @@ if connection.is_connected():
     num_lstm_layers = st.slider("Number of LSTM Layers", min_value=1, max_value=4, value=1)
     lstm_units = st.slider("LSTM Units", min_value=1, max_value=128, value=16)
     batch_size = st.slider("Batch Size", min_value=1, max_value=50, value=10)
-    num_epochs = st.slider("Number of Epochs", min_value=1, max_value=100, value=100)
+    num_epochs = st.slider("Number of Epochs", min_value=1, max_value=500, value=100)
 
     model = Sequential()
     model.add(LSTM(units=lstm_units, input_shape=(time_step, 1)))
